@@ -1,0 +1,70 @@
+/* Anthropic Brand Theme */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:wght@400;500;600&display=swap');
+
+:root {
+  --dark: #141413;
+  --light: #faf9f5;
+  --mid-gray: #b0aea5;
+  --light-gray: #e8e6dc;
+  --orange: #d97757;
+  --blue: #6a9bcc;
+  --green: #788c5d;
+}
+
+body {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.75;
+  color: var(--dark);
+  background: var(--light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+h1 {
+  font-size: 28pt;
+  border-bottom: 4px solid var(--orange);
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 20pt;
+  border-left: 4px solid var(--orange);
+  padding-left: 14px;
+  margin-top: 2em;
+}
+
+h3 { font-size: 14pt; margin-top: 1.5em; }
+
+pre {
+  font-family: 'Consolas', 'Fira Code', monospace;
+  font-size: 9pt;
+  background: var(--dark);
+  color: var(--light);
+  padding: 16px 20px;
+  border-radius: 8px;
+  border-left: 5px solid var(--orange);
+}
+
+code {
+  font-family: 'Consolas', monospace;
+  background: var(--light-gray);
+  color: var(--dark);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+pre code { background: transparent; padding: 0; }
+
+table { width: 100%; border-collapse: collapse; margin: 1.5em 0; }
+th { font-family: 'Poppins', sans-serif; background: var(--dark); color: var(--light); padding: 14px; text-align: left; }
+td { border: 1px solid var(--mid-gray); padding: 12px; }
+tr:nth-child(even) { background: var(--light-gray); }
+
+a { color: var(--blue); text-decoration: none; font-weight: 500; }
+blockquote { border-left: 4px solid var(--green); background: var(--light-gray); padding: 14px 18px; margin: 1.2em 0; font-style: italic; }

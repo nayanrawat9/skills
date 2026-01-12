@@ -1,0 +1,66 @@
+/* Golden Hour Theme */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap');
+
+:root {
+  --mustard-yellow: #f4a900;
+  --terracotta: #c1666b;
+  --warm-beige: #d4b896;
+  --chocolate-brown: #4a403a;
+}
+
+body {
+  font-family: 'Libre Franklin', 'FreeSans', sans-serif;
+  font-size: 11pt;
+  line-height: 1.75;
+  color: var(--chocolate-brown);
+  background: var(--warm-beige);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Libre Franklin', 'FreeSans', sans-serif;
+  font-weight: 700;
+  color: var(--chocolate-brown);
+}
+
+h1 {
+  font-size: 26pt;
+  border-bottom: 4px solid var(--mustard-yellow);
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 18pt;
+  border-left: 4px solid var(--terracotta);
+  padding-left: 12px;
+  margin-top: 1.8em;
+}
+
+h3 { font-size: 14pt; color: var(--terracotta); }
+
+pre {
+  font-family: 'Consolas', monospace;
+  font-size: 9pt;
+  background: var(--chocolate-brown);
+  color: var(--warm-beige);
+  padding: 14px 18px;
+  border-radius: 6px;
+  border-left: 4px solid var(--mustard-yellow);
+}
+
+code {
+  font-family: 'Consolas', monospace;
+  background: #c8a882;
+  color: var(--chocolate-brown);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+pre code { background: transparent; color: var(--warm-beige); padding: 0; }
+
+table { width: 100%; border-collapse: collapse; margin: 1.2em 0; }
+th { background: var(--chocolate-brown); color: var(--warm-beige); padding: 12px; }
+td { border: 1px solid #c8a882; padding: 10px; }
+tr:nth-child(even) { background: #c8a882; }
+
+a { color: var(--terracotta); text-decoration: none; font-weight: 600; }
+blockquote { border-left: 4px solid var(--mustard-yellow); background: #c8a882; padding: 12px 16px; margin: 1em 0; }

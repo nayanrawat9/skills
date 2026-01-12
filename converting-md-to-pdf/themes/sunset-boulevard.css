@@ -1,0 +1,66 @@
+/* Sunset Boulevard Theme */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  --burnt-orange: #e76f51;
+  --coral: #f4a261;
+  --warm-sand: #e9c46a;
+  --deep-purple: #264653;
+}
+
+body {
+  font-family: 'Open Sans', 'DejaVu Sans', sans-serif;
+  font-size: 11pt;
+  line-height: 1.75;
+  color: var(--deep-purple);
+  background: #faf8f5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', 'DejaVu Serif', Georgia, serif;
+  font-weight: 700;
+  color: var(--deep-purple);
+}
+
+h1 {
+  font-size: 26pt;
+  border-bottom: 4px solid var(--burnt-orange);
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 18pt;
+  border-left: 4px solid var(--coral);
+  padding-left: 12px;
+  margin-top: 1.8em;
+}
+
+h3 { font-size: 14pt; color: var(--burnt-orange); }
+
+pre {
+  font-family: 'Consolas', monospace;
+  font-size: 9pt;
+  background: var(--deep-purple);
+  color: #faf8f5;
+  padding: 14px 18px;
+  border-radius: 6px;
+  border-left: 4px solid var(--coral);
+}
+
+code {
+  font-family: 'Consolas', monospace;
+  background: #f5e6c8;
+  color: var(--deep-purple);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+pre code { background: transparent; color: #faf8f5; padding: 0; }
+
+table { width: 100%; border-collapse: collapse; margin: 1.2em 0; }
+th { background: var(--deep-purple); color: #faf8f5; padding: 12px; }
+td { border: 1px solid var(--warm-sand); padding: 10px; }
+tr:nth-child(even) { background: #f5e6c8; }
+
+a { color: var(--burnt-orange); text-decoration: none; font-weight: 600; }
+blockquote { border-left: 4px solid var(--warm-sand); background: #f5e6c8; padding: 12px 16px; margin: 1em 0; }

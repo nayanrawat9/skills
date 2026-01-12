@@ -1,0 +1,67 @@
+/* Botanical Garden Theme */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  --fern-green: #4a7c59;
+  --marigold: #f9a620;
+  --terracotta: #b7472a;
+  --cream: #f5f3ed;
+  --dark-green: #2d4a35;
+}
+
+body {
+  font-family: 'Open Sans', 'DejaVu Sans', sans-serif;
+  font-size: 11pt;
+  line-height: 1.75;
+  color: var(--dark-green);
+  background: var(--cream);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', 'DejaVu Serif', Georgia, serif;
+  font-weight: 700;
+  color: var(--dark-green);
+}
+
+h1 {
+  font-size: 26pt;
+  border-bottom: 4px solid var(--fern-green);
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 18pt;
+  border-left: 4px solid var(--marigold);
+  padding-left: 12px;
+  margin-top: 1.8em;
+}
+
+h3 { font-size: 14pt; color: var(--fern-green); }
+
+pre {
+  font-family: 'Consolas', monospace;
+  font-size: 9pt;
+  background: var(--dark-green);
+  color: var(--cream);
+  padding: 14px 18px;
+  border-radius: 6px;
+  border-left: 4px solid var(--marigold);
+}
+
+code {
+  font-family: 'Consolas', monospace;
+  background: #e8e5dc;
+  color: var(--dark-green);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+pre code { background: transparent; color: var(--cream); padding: 0; }
+
+table { width: 100%; border-collapse: collapse; margin: 1.2em 0; }
+th { background: var(--fern-green); color: var(--cream); padding: 12px; }
+td { border: 1px solid #c5c2b8; padding: 10px; }
+tr:nth-child(even) { background: #ebe8e0; }
+
+a { color: var(--terracotta); text-decoration: none; font-weight: 600; }
+blockquote { border-left: 4px solid var(--marigold); background: #ebe8e0; padding: 12px 16px; margin: 1em 0; }

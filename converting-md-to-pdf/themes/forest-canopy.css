@@ -1,0 +1,66 @@
+/* Forest Canopy Theme */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+:root {
+  --forest-green: #2d4a2b;
+  --sage: #7d8471;
+  --olive: #a4ac86;
+  --ivory: #faf9f6;
+}
+
+body {
+  font-family: 'Source Sans Pro', 'FreeSans', sans-serif;
+  font-size: 11pt;
+  line-height: 1.75;
+  color: var(--forest-green);
+  background: var(--ivory);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Libre Baskerville', 'FreeSerif', Georgia, serif;
+  font-weight: 700;
+  color: var(--forest-green);
+}
+
+h1 {
+  font-size: 26pt;
+  border-bottom: 4px solid var(--forest-green);
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 18pt;
+  border-left: 4px solid var(--sage);
+  padding-left: 12px;
+  margin-top: 1.8em;
+}
+
+h3 { font-size: 14pt; color: var(--sage); }
+
+pre {
+  font-family: 'Consolas', monospace;
+  font-size: 9pt;
+  background: var(--forest-green);
+  color: var(--ivory);
+  padding: 14px 18px;
+  border-radius: 6px;
+  border-left: 4px solid var(--olive);
+}
+
+code {
+  font-family: 'Consolas', monospace;
+  background: #e8e8e2;
+  color: var(--forest-green);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+pre code { background: transparent; color: var(--ivory); padding: 0; }
+
+table { width: 100%; border-collapse: collapse; margin: 1.2em 0; }
+th { background: var(--forest-green); color: var(--ivory); padding: 12px; }
+td { border: 1px solid var(--olive); padding: 10px; }
+tr:nth-child(even) { background: #eeedea; }
+
+a { color: var(--sage); text-decoration: none; font-weight: 600; }
+blockquote { border-left: 4px solid var(--olive); background: #eeedea; padding: 12px 16px; margin: 1em 0; }

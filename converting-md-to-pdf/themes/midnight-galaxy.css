@@ -1,0 +1,66 @@
+/* Midnight Galaxy Theme */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap');
+
+:root {
+  --deep-purple: #2b1e3e;
+  --cosmic-blue: #4a4e8f;
+  --lavender: #a490c2;
+  --silver: #e6e6fa;
+}
+
+body {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-size: 11pt;
+  line-height: 1.75;
+  color: var(--deep-purple);
+  background: var(--silver);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', 'FreeSans', sans-serif;
+  font-weight: 700;
+  color: var(--deep-purple);
+}
+
+h1 {
+  font-size: 26pt;
+  border-bottom: 4px solid var(--lavender);
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 18pt;
+  border-left: 4px solid var(--cosmic-blue);
+  padding-left: 12px;
+  margin-top: 1.8em;
+}
+
+h3 { font-size: 14pt; color: var(--cosmic-blue); }
+
+pre {
+  font-family: 'Consolas', monospace;
+  font-size: 9pt;
+  background: var(--deep-purple);
+  color: var(--silver);
+  padding: 14px 18px;
+  border-radius: 6px;
+  border-left: 4px solid var(--lavender);
+}
+
+code {
+  font-family: 'Consolas', monospace;
+  background: #dcd6e8;
+  color: var(--deep-purple);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+pre code { background: transparent; color: var(--silver); padding: 0; }
+
+table { width: 100%; border-collapse: collapse; margin: 1.2em 0; }
+th { background: var(--deep-purple); color: var(--silver); padding: 12px; }
+td { border: 1px solid var(--lavender); padding: 10px; }
+tr:nth-child(even) { background: #d8d0e8; }
+
+a { color: var(--cosmic-blue); text-decoration: none; font-weight: 600; }
+blockquote { border-left: 4px solid var(--lavender); background: #ebe6f4; padding: 12px 16px; margin: 1em 0; font-style: italic; }
