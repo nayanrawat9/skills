@@ -1,44 +1,26 @@
-# MD to PDF Skill
+# Agent Skills
 
-An Amp agent skill for converting Markdown files to professionally styled PDFs using [md-to-pdf](https://github.com/simonhaenisch/md-to-pdf).
+A collection of reusable skills for AI coding agents.
 
-## Features
+## Available Skills
 
-- **11 curated themes** for different use cases (corporate, technical, creative, academic, etc.)
-- **Smart theme recommendations** based on content type
-- **Multiple page formats** (A4, A3, Letter, Legal)
-- **Code syntax highlighting** support
+### [converting-md-to-pdf](./converting-md-to-pdf/)
 
-## Themes
+Convert Markdown files to professionally styled PDFs using [md-to-pdf](https://github.com/simonhaenisch/md-to-pdf).
 
-| Theme | Best For |
-|-------|----------|
-| Anthropic Brand | Corporate, professional |
-| Tech Innovation | Technical docs, software |
-| Ocean Depths | Financial, consulting |
-| Midnight Galaxy | Creative, entertainment |
-| Modern Minimalist | Academic, clean reports |
-| Arctic Frost | Healthcare, clean tech |
-| Botanical Garden | Food, natural products |
-| Desert Rose | Fashion, beauty, weddings |
-| Forest Canopy | Environmental, sustainability |
-| Golden Hour | Hospitality, artisan |
-| Sunset Boulevard | Marketing, lifestyle |
-
-## Installation
-
-1. Install md-to-pdf globally:
-   ```bash
-   npm install -g md-to-pdf
-   ```
-
-2. Copy the `converting-md-to-pdf` folder to your Amp skills directory:
-   - Windows: `%USERPROFILE%\.agents\skills\`
-   - macOS/Linux: `~/.agents/skills/`
+**Features:**
+- 11 curated themes (corporate, technical, creative, academic, etc.)
+- Smart theme recommendations based on content type
+- Multiple page formats (A4, A3, Letter, Legal)
+- Code syntax highlighting support
 
 ## Usage
 
-Once installed, Amp will automatically detect markdown-to-PDF conversion tasks and suggest appropriate themes based on your content.
+Copy the desired skill folder to your agent's skills directory.
+
+## Contributing
+
+Feel free to submit PRs with new skills or improvements to existing ones.
 
 ## License
 
