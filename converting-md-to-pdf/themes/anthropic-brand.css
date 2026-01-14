@@ -1,4 +1,4 @@
-/* Anthropic Brand Theme */
+/* Anthropic Brand Theme - Robust Variant */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:wght@400;500;600&display=swap');
 
 :root {
@@ -13,42 +13,67 @@
 
 body {
   font-family: 'Lora', Georgia, serif;
-  font-size: 11pt;
-  line-height: 1.75;
+  font-size: 13pt;
+  /* Increased from 11pt */
+  font-weight: 500;
+  /* Robust feel */
+  line-height: 1.6;
   color: var(--dark);
   background: var(--light);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Poppins', Arial, sans-serif;
   font-weight: 600;
   color: var(--dark);
 }
 
 h1 {
-  font-size: 28pt;
+  font-size: 32pt;
+  /* Increased from 28pt */
   border-bottom: 4px solid var(--orange);
   padding-bottom: 12px;
   margin-bottom: 24px;
 }
 
 h2 {
-  font-size: 20pt;
+  font-size: 24pt;
+  /* Increased from 20pt */
   border-left: 4px solid var(--orange);
   padding-left: 14px;
   margin-top: 2em;
 }
 
-h3 { font-size: 14pt; margin-top: 1.5em; }
+h3 {
+  font-size: 18pt;
+  margin-top: 1.5em;
+}
+
+/* Image constraints to ensure they fit the page */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5em auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
 pre {
   font-family: 'Consolas', 'Fira Code', monospace;
-  font-size: 9pt;
+  font-size: 11pt;
+  /* Increased from 9pt */
   background: var(--dark);
   color: var(--light);
   padding: 16px 20px;
   border-radius: 8px;
   border-left: 5px solid var(--orange);
+  overflow-x: auto;
 }
 
 code {
@@ -57,14 +82,48 @@ code {
   color: var(--dark);
   padding: 3px 8px;
   border-radius: 4px;
+  font-weight: 600;
 }
 
-pre code { background: transparent; padding: 0; }
+pre code {
+  background: transparent;
+  padding: 0;
+  font-weight: 400;
+}
 
-table { width: 100%; border-collapse: collapse; margin: 1.5em 0; }
-th { font-family: 'Poppins', sans-serif; background: var(--dark); color: var(--light); padding: 14px; text-align: left; }
-td { border: 1px solid var(--mid-gray); padding: 12px; }
-tr:nth-child(even) { background: var(--light-gray); }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+}
 
-a { color: var(--blue); text-decoration: none; font-weight: 500; }
-blockquote { border-left: 4px solid var(--green); background: var(--light-gray); padding: 14px 18px; margin: 1.2em 0; font-style: italic; }
+th {
+  font-family: 'Poppins', sans-serif;
+  background: var(--dark);
+  color: var(--light);
+  padding: 14px;
+  text-align: left;
+}
+
+td {
+  border: 1px solid var(--mid-gray);
+  padding: 12px;
+}
+
+tr:nth-child(even) {
+  background: var(--light-gray);
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+blockquote {
+  border-left: 4px solid var(--green);
+  background: var(--light-gray);
+  padding: 14px 18px;
+  margin: 1.2em 0;
+  font-style: italic;
+}

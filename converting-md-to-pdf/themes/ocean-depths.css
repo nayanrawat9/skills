@@ -1,4 +1,4 @@
-/* Ocean Depths Theme */
+/* Ocean Depths Theme - Robust Variant */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
 
 :root {
@@ -10,41 +10,61 @@
 
 body {
   font-family: 'Merriweather', Georgia, serif;
-  font-size: 11pt;
-  line-height: 1.8;
+  font-size: 13pt;
+  font-weight: 500;
+  line-height: 1.6;
   color: var(--deep-navy);
   background: var(--cream);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Open Sans', 'DejaVu Sans', sans-serif;
   font-weight: 700;
   color: var(--deep-navy);
 }
 
 h1 {
-  font-size: 26pt;
+  font-size: 30pt;
   border-bottom: 4px solid var(--teal);
   padding-bottom: 10px;
 }
 
 h2 {
-  font-size: 18pt;
+  font-size: 22pt;
   border-left: 4px solid var(--teal);
   padding-left: 12px;
   margin-top: 1.8em;
 }
 
-h3 { font-size: 14pt; color: var(--teal); }
+h3 {
+  font-size: 17pt;
+  color: var(--teal);
+}
+
+/* Image constraints to ensure they fit the page */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5em auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
 pre {
   font-family: 'Consolas', monospace;
-  font-size: 9pt;
+  font-size: 11pt;
   background: var(--deep-navy);
   color: var(--cream);
   padding: 14px 18px;
   border-radius: 6px;
   border-left: 4px solid var(--seafoam);
+  overflow-x: auto;
 }
 
 code {
@@ -53,14 +73,46 @@ code {
   color: var(--deep-navy);
   padding: 2px 6px;
   border-radius: 4px;
+  font-weight: 600;
 }
 
-pre code { background: transparent; color: var(--cream); padding: 0; }
+pre code {
+  background: transparent;
+  color: var(--cream);
+  padding: 0;
+  font-weight: 400;
+}
 
-table { width: 100%; border-collapse: collapse; margin: 1.2em 0; }
-th { background: var(--deep-navy); color: var(--cream); padding: 12px; }
-td { border: 1px solid var(--seafoam); padding: 10px; }
-tr:nth-child(even) { background: #e0f0f0; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2em 0;
+}
 
-a { color: var(--teal); text-decoration: none; font-weight: 600; }
-blockquote { border-left: 4px solid var(--seafoam); background: #e8f4f4; padding: 12px 16px; margin: 1em 0; }
+th {
+  background: var(--deep-navy);
+  color: var(--cream);
+  padding: 12px;
+}
+
+td {
+  border: 1px solid var(--seafoam);
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background: #e0f0f0;
+}
+
+a {
+  color: var(--teal);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+blockquote {
+  border-left: 4px solid var(--seafoam);
+  background: #e8f4f4;
+  padding: 12px 16px;
+  margin: 1em 0;
+}

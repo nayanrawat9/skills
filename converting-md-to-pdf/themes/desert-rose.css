@@ -1,4 +1,4 @@
-/* Desert Rose Theme */
+/* Desert Rose Theme - Robust Variant */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap');
 
 :root {
@@ -10,41 +10,61 @@
 
 body {
   font-family: 'Libre Franklin', 'FreeSans', Arial, sans-serif;
-  font-size: 11pt;
-  line-height: 1.75;
+  font-size: 13pt;
+  font-weight: 500;
+  line-height: 1.6;
   color: var(--deep-burgundy);
   background: var(--sand);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Libre Franklin', 'FreeSans', sans-serif;
   font-weight: 700;
   color: var(--deep-burgundy);
 }
 
 h1 {
-  font-size: 26pt;
+  font-size: 30pt;
   border-bottom: 4px solid var(--dusty-rose);
   padding-bottom: 10px;
 }
 
 h2 {
-  font-size: 18pt;
+  font-size: 22pt;
   border-left: 4px solid var(--clay);
   padding-left: 12px;
   margin-top: 1.8em;
 }
 
-h3 { font-size: 14pt; color: var(--clay); }
+h3 {
+  font-size: 17pt;
+  color: var(--clay);
+}
+
+/* Image constraints to ensure they fit the page */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5em auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
 pre {
   font-family: 'Consolas', monospace;
-  font-size: 9pt;
+  font-size: 11pt;
   background: var(--deep-burgundy);
   color: var(--sand);
   padding: 14px 18px;
   border-radius: 6px;
   border-left: 4px solid var(--dusty-rose);
+  overflow-x: auto;
 }
 
 code {
@@ -53,14 +73,47 @@ code {
   color: var(--deep-burgundy);
   padding: 2px 6px;
   border-radius: 4px;
+  font-weight: 600;
 }
 
-pre code { background: transparent; color: var(--sand); padding: 0; }
+pre code {
+  background: transparent;
+  color: var(--sand);
+  padding: 0;
+  font-weight: 400;
+}
 
-table { width: 100%; border-collapse: collapse; margin: 1.2em 0; }
-th { background: var(--deep-burgundy); color: var(--sand); padding: 12px; }
-td { border: 1px solid var(--dusty-rose); padding: 10px; }
-tr:nth-child(even) { background: #dcc8bc; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2em 0;
+}
 
-a { color: var(--clay); text-decoration: none; font-weight: 600; }
-blockquote { border-left: 4px solid var(--dusty-rose); background: #dcc8bc; padding: 12px 16px; margin: 1em 0; font-style: italic; }
+th {
+  background: var(--deep-burgundy);
+  color: var(--sand);
+  padding: 12px;
+}
+
+td {
+  border: 1px solid var(--dusty-rose);
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background: #dcc8bc;
+}
+
+a {
+  color: var(--clay);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+blockquote {
+  border-left: 4px solid var(--dusty-rose);
+  background: #dcc8bc;
+  padding: 12px 16px;
+  margin: 1em 0;
+  font-style: italic;
+}
